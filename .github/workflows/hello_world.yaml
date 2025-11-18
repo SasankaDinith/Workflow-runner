@@ -11,15 +11,17 @@ on:
 
 jobs:
   hello:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: hello wolrd
-          run: echo "Hello world!"
-          shell: bash
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "Hello world!"
+        shell: bash
+
   goodbye:
-      runs-on: ubutnu-latest
-      steps:
-        - name: goodbye world
-        - run: echo "Goodbye world!"
-          shell: bash
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: goodbye world
+        run: echo "Goodbye world!"
+        shell: bash
