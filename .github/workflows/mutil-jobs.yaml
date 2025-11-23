@@ -1,0 +1,26 @@
+name: muti jobs running
+
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello-in-bash:
+    runs-on: ubuntu-24.04
+    steps:
+     - run: echo "Hello world!"
+       shell: bash
+
+  say-hello-in-python:
+    runs-on: ubuntu-24.04
+    steps:
+      - run: print("Hello world")
+        shell: python
+
+  say-actions:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/hello-world@v4
+
+        with:
+          greet: "Who to greet"
+      
