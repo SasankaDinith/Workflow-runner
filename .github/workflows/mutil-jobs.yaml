@@ -19,7 +19,7 @@ jobs:
   say-actions:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/hello-world@v4
+      - uses: actions/action-runner@v2
 
         with:
           greet: "Who to greet"
